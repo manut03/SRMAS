@@ -1,0 +1,7 @@
+item_id,name,category,price,unit
+M001,Idly,Breakfast,30,plate
+M002,Dosa,Breakfast,50,plate
+M003,Fried Rice,Main,120,plate
+M004,Paneer Curry,Main,180,plate
+M005,Coke,Beverage,40,bottle
+M006,Coffee,Beverage,35,cup

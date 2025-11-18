@@ -47,7 +47,6 @@ SRMAS/
 │   └── sales.csv
 │
 └── README.md
-<<<<<<< HEAD
 ```
 
 ---
@@ -142,7 +141,6 @@ This repository follows **CC BY-SA 4.0**, per Kaggle competition requirements.
 ---
 
 # ✔ SRMAS is ready for submission & GitHub showcase.
-=======
 
 🚀 Features
 ✅ Multi-Agent Architecture
@@ -205,7 +203,6 @@ images/sales_by_hour.png
 6. Bill Amount Distribution Histogram
 images/bill_distribution.png
 
-(Optional: Create an /images folder and upload the generated PNGs.)
 
 🛠 How to Run
 1. Open the Notebook
@@ -268,4 +265,3 @@ No API keys are required or included.
 All datasets are synthetic and safe to publish.
 
 Fully reproducible: everything resets on a fresh run.
->>>>>>> a0aae611c36ecd765feb481d3f1799bfcae8fa16

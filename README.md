@@ -1,23 +1,21 @@
 # Smart Restaurant Multi-Agent System (SRMAS)
 
-## Overview
-SRMAS is a lightweight, offline-capable multi-agent system designed for small restaurants, cafés, and food stalls.  
-It automates billing, inventory updates, sales logging, and analytics using a modular multi-agent architecture.
+## 📖 Overview
+SRMAS is a lightweight, offline-capable multi-agent system designed for small restaurants, cafés, and food stalls. It automates billing, inventory updates, sales logging, and generates restaurant analytics.
 
-This project demonstrates:
-- Agent coordination (Billing, Inventory, Reports)
-- Sequential and parallel agent flows
-- Memory Bank (context storage)
-- Session management
-- CSV-based offline data layer
-- Synthetic sales generation and visual analytics
+The system demonstrates:
+- Multi-agent coordination (Billing, Inventory, Reporting)
+- Sequential and parallel agent workflows
+- CSV-based offline-friendly data layer
+- Session management using InMemorySessionService
+- Memory Bank for storing contextual notes
+- Synthetic sales generation and advanced visual analytics
 
 ---
 
-## Repository Structure
+## 📂 Repository Structure
 
 SRMAS/
-│
 ├── notebook/
 │   └── Smart_Restaurant_Multi-Agent_System_SRMAS.ipynb
 │
@@ -38,92 +36,91 @@ SRMAS/
 
 ---
 
-## Features
+## 🚀 Features
 
-### Multi-Agent Architecture
-- Menu Agent – retrieves menu and item details
-- Billing Agent – creates bills and logs sales
-- Inventory Agent – deducts ingredients
-- Report Agent – generates summaries and analytics
+### ✔️ Multi-Agent Architecture
+- Menu Agent – retrieves menu items  
+- Billing Agent – generates bills and logs sales  
+- Inventory Agent – performs ingredient deduction  
+- Report Agent – aggregates sales and generates analytics  
 
-### Memory and Session
-- InMemorySessionService manages session state
-- MemoryBank stores contextual notes
+### ✔️ Session + Memory
+- InMemorySessionService tracks session state  
+- Memory Bank stores contextual insights from agent actions  
 
-### Offline CSV-Based Data Layer
+### ✔️ Offline CSV Data Layer
+All data is stored locally:
 - menu.csv  
 - inventory.csv  
 - sales.csv  
 
-### Agent Coordination Flow
-Bill → Inventory Update → Memory Update → Reporting  
-Parallel inventory deduction using asyncio.gather()
+### ✔️ Agent Coordination Flow
+Bill → Inventory Update → Memory → Reporting  
+Inventory deductions run in parallel via `asyncio.gather()`.
 
-### Analytics (Notebook Cell 6 and 8)
-The notebook generates:
-- Daily revenue plot
-- Top-selling items bar chart
-- Category-wise sales pie chart
-- Sales-by-hour trend
-- Bill distribution histogram
+### ✔️ Analytics (Notebook Cell 6 & 8)
+The system generates:
+- Daily revenue trend  
+- Top-selling items  
+- Category-wise sales distribution  
+- Bill amount distribution  
+- Sales-by-hour trend  
 
-Images are saved in the /images directory.
+Output plots are saved inside the `images/` directory.
 
 ---
 
-## How to Run
+## 🧪 How to Run
 
 ### 1. Clone the Repository
-```bash
 git clone https://github.com/manut03/SRMAS.git
 cd SRMAS
-```
 
 ### 2. Install Dependencies
-```bash
 pip install pandas numpy matplotlib rich
-```
 
 ### 3. Run the Notebook (Cells 1 → 8)
 1. Install dependencies  
-2. Create synthetic menu and inventory  
-3. Base agent classes  
-4. Concrete agents and Coordinator  
+2. Generate synthetic menu and inventory  
+3. Create base agent classes  
+4. Implement concrete agents + Coordinator  
 5. Generate demo orders  
-6. Basic analytics  
-7. Evaluation and memory logging  
-8. Synthetic sales and advanced analytics  
+6. Produce analytics  
+7. Add evaluation + memory  
+8. Produce synthetic sales + full analytics  
 
 ---
 
-## Outputs
-- Bill generation with line items
-- Parallel inventory deductions
-- Sales logging to CSV
-- Daily summary and analytics
-- Memory logs
-- Multiple plots saved in images/
-- Evaluation scores
+## 📊 Outputs You Will See
+- Bill generation  
+- Parallel inventory deductions  
+- Sales appended to CSV  
+- Daily and item-level analytics  
+- Session memory logs  
+- Multiple plots saved under images/  
+- Evaluation score  
 
 ---
 
-## Images Produced
-- images/srmas_architecture.png
-- images/daily_sales_trend.png
-- images/top_items.png
-- images/category_pie.png
-- images/sales_by_hour.png
-- images/bill_distribution.png
+## 🖼️ Images Produced
+
+images/srmas_architecture.png  
+images/daily_sales_trend.png  
+images/top_items.png  
+images/category_pie.png  
+images/sales_by_hour.png  
+images/bill_distribution.png  
 
 ---
 
-## License
-This repository is released under the CC BY-SA 4.0 license (as required by the Kaggle competition).
+## 📘 License
+This repository is distributed under CC BY-SA 4.0 (as required by the Kaggle competition).
 
 ---
 
-## Notes
-- No API keys used
-- All datasets are synthetic and safe to publish
-- Notebook is fully reproducible from scratch
+## ⚠️ Notes
+- No API keys required  
+- All datasets are synthetic and safe to publish  
+- Fully reproducible from a clean run  
+
 

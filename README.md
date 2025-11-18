@@ -15,6 +15,7 @@ The system demonstrates:
 
 ## 📂 Repository Structure
 
+```
 SRMAS/
 ├── notebook/
 │   └── Smart_Restaurant_Multi-Agent_System_SRMAS.ipynb
@@ -33,6 +34,20 @@ SRMAS/
 │   └── srmas_architecture.png
 │
 └── README.md
+```
+
+---
+
+## 🖼️ Images Produced
+
+Here is a list of images included in the project:
+
+- ![Architecture](images/srmas_architecture.png)
+- ![Daily Sales Trend](images/daily_sales_trend.png)
+- ![Top Items](images/top_items.png)
+- ![Category Pie Chart](images/category_pie.png)
+- ![Sales by Hour](images/sales_by_hour.png)
+- ![Bill Distribution](images/bill_distribution.png)
 
 ---
 
@@ -73,11 +88,15 @@ Output plots are saved inside the `images/` directory.
 ## 🧪 How to Run
 
 ### 1. Clone the Repository
+```bash
 git clone https://github.com/manut03/SRMAS.git
 cd SRMAS
+```
 
 ### 2. Install Dependencies
+```bash
 pip install pandas numpy matplotlib rich
+```
 
 ### 3. Run the Notebook (Cells 1 → 8)
 1. Install dependencies  
@@ -102,17 +121,6 @@ pip install pandas numpy matplotlib rich
 
 ---
 
-## 🖼️ Images Produced
-
-images/srmas_architecture.png  
-images/daily_sales_trend.png  
-images/top_items.png  
-images/category_pie.png  
-images/sales_by_hour.png  
-images/bill_distribution.png  
-
----
-
 ## 📘 License
 This repository is distributed under CC BY-SA 4.0 (as required by the Kaggle competition).
 
@@ -122,5 +130,3 @@ This repository is distributed under CC BY-SA 4.0 (as required by the Kaggle com
 - No API keys required  
 - All datasets are synthetic and safe to publish  
 - Fully reproducible from a clean run  
-
-
